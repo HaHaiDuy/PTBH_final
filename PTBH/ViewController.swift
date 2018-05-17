@@ -75,13 +75,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
             {
                 if(b==0)
                 {
-                    lbl_KQ.isHidden = false
-                    txt_KQ.isHidden = false
-                    txt_KQ.text = "PT vô nghiệm"
+                    if(c==0)
+                    {
+                        lbl_KQ.isHidden = false
+                        txt_KQ.isHidden = false
+                        txt_KQ.text = "PT vô số nghiệm"
+                    }
+                    else
+                    {
+                        lbl_KQ.isHidden = false
+                        txt_KQ.isHidden = false
+                        txt_KQ.text = "PT vô nghiệm"
+                    }
                 }
                 else
                 {
-                    //var temp = -c/b
                     lbl_KQ.isHidden = false
                     txt_KQ.isHidden = false
                     lbl_X1.isHidden = false
